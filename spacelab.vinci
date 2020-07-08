@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.nasdanika.vinci.bootstrap:BootstrapPage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.nasdanika.ncore="urn:org.nasdanika.ncore" xmlns:org.nasdanika.vinci.app="urn:org.nasdanika.vinci.app" xmlns:org.nasdanika.vinci.bootstrap="urn:org.nasdanika.vinci.bootstrap" xmlns:org.nasdanika.vinci.html="urn:org.nasdanika.vinci.html" title="Flatly не флюид" name="${actions/active/text}" language="" fontAwesome="true" lineAwesome="true" jsTree="true" githubMarkdownCss="true" highlightJs="true" theme="Spacelab">
+  <head xsi:type="org.nasdanika.vinci.html:ContentTag">
+    <attributes xsi:type="org.nasdanika.ncore:Property" value="generator" interpolate="false" name="name"/>
+    <attributes xsi:type="org.nasdanika.ncore:Property" value="Nasdanika Vinci" interpolate="false" name="content"/>
+  </head>
+  <head xsi:type="org.nasdanika.vinci.html:Stylesheet" code="body {&#xD;&#xA;  background-image: url(&quot;bg.JPG&quot;);&#xD;&#xA;  background-attachment: fixed;&#xD;&#xA;  background-size: 100%;&#xD;&#xA;  ​​​​​​​background-repeat: no-repeat;&#xD;&#xA;}"/>
+  <head xsi:type="org.nasdanika.vinci.html:Stylesheet" code=".nsd-app-content-row {&#xA;    min-height: 80vh;&#xA;}&#xA;.nsd-root-action {&#xA;    text-decoration: none;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xA;@media print {&#xA;  div.nsd-app-navigation-panel {&#xA;    display: none;&#xA;  }&#xD;&#xA;&#xD;&#xA;"/>
+  <head xsi:type="org.nasdanika.vinci.html:Script" code="$(document).ready( function() {&#xA;    $('.nsd-app-container').addClass(['border-bottom', 'border-dark']);&#xA;    $('.nsd-app-header .nav-link').addClass('text-light', 'bg-light');&#xA;    $('.nsd-root-action').addClass(['display-4', 'text-primary']);&#xA;&#xA;    $('.nsd-app-navbar nav.navbar').removeClass(['bg-light', 'navbar-light']);&#xD;&#xA;    $('.nsd-app-navbar nav.navbar').addClass(['bg-primary', 'navbar-dark']);&#xA;&#xA;    $('.nsd-app-navigation-panel').addClass(['pb-1']); &#xA;    $('.nsd-app-content-panel').addClass(['col']);&#xD;&#xA;    $('.nsd-app-footer').removeClass(['bg-dark']);&#xA;    $('.nsd-app-footer').addClass(['text-center']);&#xA;    $('.nsd-app-footer .nsd-footer-action').addClass(['text-dark']);&#xA;});&#xA;"/>
+  <builders xsi:type="org.nasdanika.vinci.app:BootstrapContainerApplication">
+    <appearance>
+      <attributes xsi:type="org.nasdanika.ncore:Object" name="style">
+        <entries xsi:type="org.nasdanika.ncore:Property" value="url (bg.JPG)" name="background-image"/>
+      </attributes>
+    </appearance>
+    <header>
+      <appearance background="">
+        <attributes xsi:type="org.nasdanika.ncore:Object" name="class">
+          <entries xsi:type="org.nasdanika.ncore:Property" value="primary" name="table"/>
+        </attributes>
+        <attributes xsi:type="org.nasdanika.ncore:Object" name="style">
+          <entries xsi:type="org.nasdanika.ncore:Property" value="url(buhta01.JPG)" name="background-image"/>
+          <entries xsi:type="org.nasdanika.ncore:Property" value="cover" name="background-size"/>
+        </attributes>
+      </appearance>
+    </header>
+    <navigationBar>
+      <appearance background="Primary">
+        <attributes xsi:type="org.nasdanika.ncore:Object" name="class">
+          <entries xsi:type="org.nasdanika.ncore:Property" value="dark" name="navbar"/>
+          <entries xsi:type="org.nasdanika.ncore:Property" value="primary" name="bg"/>
+          <entries xsi:type="org.nasdanika.ncore:Property" value="0" name="px"/>
+        </attributes>
+        <margin size="2" top="false" left="false" right="false"/>
+      </appearance>
+    </navigationBar>
+    <navigationPanel/>
+    <contentPanel>
+      <appearance>
+        <attributes xsi:type="org.nasdanika.ncore:Object" name="style">
+          <entries xsi:type="org.nasdanika.ncore:Property" value="url(buhta01.JPG)" name="background-image"/>
+          <entries xsi:type="org.nasdanika.ncore:Property" value="cover" name="background-size"/>
+        </attributes>
+        <padding size="2" breakpoint="Large" top="false"/>
+        <padding size="4" breakpoint="Large" bottom="false" left="false" right="false"/>
+      </appearance>
+    </contentPanel>
+    <footer>
+      <appearance background="">
+        <attributes xsi:type="org.nasdanika.ncore:Object" name="class">
+          <entries xsi:type="org.nasdanika.ncore:Property" value="primary" name="table"/>
+        </attributes>
+        <attributes xsi:type="org.nasdanika.ncore:Object" name="style">
+          <entries xsi:type="org.nasdanika.ncore:Property" value="1.5rem" name="font-size"/>
+          <entries xsi:type="org.nasdanika.ncore:Property" value="none" name="text-decoration"/>
+        </attributes>
+      </appearance>
+    </footer>
+  </builders>
+</org.nasdanika.vinci.bootstrap:BootstrapPage>
